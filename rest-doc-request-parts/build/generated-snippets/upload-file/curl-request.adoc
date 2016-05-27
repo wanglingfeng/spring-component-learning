@@ -1,4 +1,0 @@
-[source,bash]
-----
-$ curl 'https://www.learning.com/api/files' -i -X POST -H 'Content-Type: multipart/form-data' -F 'file=@filename.jpg;type=text/plain'
-----

@@ -1,7 +1,0 @@
-|===
-|Part|Description
-
-|file
-|上传的文件
-
-|===
