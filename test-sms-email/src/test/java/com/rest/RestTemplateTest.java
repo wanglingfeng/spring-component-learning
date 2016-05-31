@@ -1,7 +1,5 @@
 package com.rest;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rest.test.SimpleRestClient;
 import com.rest.test.controller.domain.TestInfo;
 import org.apache.http.NameValuePair;
@@ -23,7 +21,6 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.*;
 
