@@ -1,0 +1,15 @@
+spring:
+  application.name: HelloServer
+  output.ansi.enabled: always
+
+server:
+  port: 7111
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
