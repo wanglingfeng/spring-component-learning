@@ -1,6 +1,5 @@
 package org.netflix.learning.feign.client.service;
 
-import org.netflix.learning.feign.client.HelloClientApplication;
 import org.netflix.learning.feign.client.service.domain.Store;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
