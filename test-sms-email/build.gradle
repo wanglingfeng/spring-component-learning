@@ -16,7 +16,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'athena'
+    baseName = 'test-sms-email'
     version = '0.0.1-SNAPSHOT'
 }
 

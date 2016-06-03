@@ -87,7 +87,11 @@ public class RestTemplateTest {
         final String uri = "http://localhost:8080/all_json";
 
         TestInfo info = new TestInfo("asd", "123");
-        TestInfo result = restTemplate.postForObject(uri, info, TestInfo.class);
+
+        /*TestInfo result = restTemplate.postForObject(uri, info, TestInfo.class);*/
+        HttpEntity<TestInfo> requestEntity = new HttpEntity<>(info);
+        ResponseEntity<TestInfo> response = restTemplate.exchange(uri, HttpMethod.POST, requestEntity, TestInfo.class);
+        TestInfo result = response.getBody();
 
         System.out.println(result);
     }
