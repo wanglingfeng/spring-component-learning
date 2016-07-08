@@ -34,6 +34,7 @@ public class HelloClientApplication {
     }
 
     @FeignClient(value = "HelloServer")
+    /*@FeignClient(value = "HelloServer", url = "http://192.168.1.216:7111")*/ // 使用url
     interface HelloClient {
         @RequestMapping(value = "/", method = RequestMethod.GET)
         String hello();
