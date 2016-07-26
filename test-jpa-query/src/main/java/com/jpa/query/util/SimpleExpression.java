@@ -26,7 +26,7 @@ public class SimpleExpression implements Criterion {
         if (fieldName.contains(".")) {
             String[] names = fieldName.split("\\.");
 
-            expression = root.get(names[0]);
+            expression = root.join(names[0]);
 
             for (int i = 1; i < names.length; i++) {
                 expression = expression.get(names[i]);
