@@ -1,4 +1,4 @@
-rootProject.name = 'org.learning'
+rootProject.name = 'spring-component-learning'
 include 'rest-doc-request-parts'
 include 'spring-netflix-learning'
 include 'spring-netflix-learning/feign-server'
