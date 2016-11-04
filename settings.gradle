@@ -1,0 +1,6 @@
+rootProject.name = 'org.learning'
+include 'rest-doc-request-parts'
+include 'spring-netflix-learning'
+include 'spring-redis-learning'
+include 'test-jpa-query'
+include 'test-sms-email'
