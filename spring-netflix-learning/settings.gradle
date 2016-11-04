@@ -1,5 +1,3 @@
 rootProject.name = 'spring-netflix-learning'
-include 'feign-server'
-include 'feign-client'
-include 'eureka'
+
 
