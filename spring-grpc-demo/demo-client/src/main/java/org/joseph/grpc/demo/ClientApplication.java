@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
+ * client端，整合spring去使用grpc
+ *
  * Created by lfwang on 2016/11/7.
  */
 @SpringBootApplication
