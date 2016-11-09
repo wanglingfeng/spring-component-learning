@@ -1,5 +1,7 @@
 package org.joseph.grpc.demo;
 
+import io.grpc.Server;
+import io.grpc.ServerBuilder;
 import io.grpc.examples.GreeterGrpc;
 import org.joseph.grpc.demo.service.GreeterService;
 
@@ -20,7 +22,7 @@ public class BasicServer {
         int port = 6560;
 
         GreeterGrpc.GreeterImplBase greeterImplBase = new GreeterService();
-        io.grpc.Server server = io.grpc.ServerBuilder.forPort(port).addService(greeterImplBase.bindService()).build();
+        Server server = ServerBuilder.forPort(port).addService(greeterImplBase.bindService()).build();
 
         try {
             server.start();
