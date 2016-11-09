@@ -5,6 +5,8 @@ import io.grpc.ManagedChannelBuilder;
 import io.grpc.examples.GreeterGrpc;
 import io.grpc.examples.GreeterOuterClass;
 
+import java.util.concurrent.ExecutionException;
+
 /**
  * client端，不整合spring去使用grpc
  *
@@ -12,7 +14,7 @@ import io.grpc.examples.GreeterOuterClass;
  */
 public class BasicClient {
 
-    public static void main(String... args) throws InterruptedException {
+    public static void main(String... args) throws InterruptedException, ExecutionException {
         GreeterOuterClass.HelloRequest request = GreeterOuterClass.HelloRequest.newBuilder().setName("ppap").build();
 
         ManagedChannel channel = ManagedChannelBuilder
@@ -20,8 +22,14 @@ public class BasicClient {
                 .usePlaintext(true)
                 .build();
 
+        // 同步
         GreeterGrpc.GreeterBlockingStub stub = GreeterGrpc.newBlockingStub(channel);
         GreeterOuterClass.HelloReply result = stub.sayHello(request);
+
+        // 异步
+        /*GreeterGrpc.GreeterFutureStub futureStub = GreeterGrpc.newFutureStub(channel);
+        // 会在此阻塞
+        GreeterOuterClass.HelloReply futureResult = futureStub.sayHello(request).get();*/
 
         channel.shutdownNow();
 
