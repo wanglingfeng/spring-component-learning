@@ -37,6 +37,22 @@ public class UserTest {
     }
 
     @Test
+    public void update() {
+        String id = "ASD123";
+
+        UserRepository.User u = userRepository.get(id);
+        System.out.println("before update" + u);
+
+        u.setName("joseph");
+        u.setAge(18);
+
+        userRepository.save(id, u);
+
+        UserRepository.User uUpdated = userRepository.get(id);
+        System.out.println("after update" + uUpdated);
+    }
+
+    @Test
     public void delete() {
         userRepository.delete("ASD123");
     }
