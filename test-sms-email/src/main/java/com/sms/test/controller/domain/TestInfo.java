@@ -1,4 +1,4 @@
-package com.rest.test.controller.domain;
+package com.sms.test.controller.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.rest.test;
+package com.sms.test.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,11 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ����jdk��spring��RestTemplate
- *
  * Created by Lingfeng on 2016/3/22.
  */
-@Component
 public class SimpleRestClient {
 
     private static final Logger log = LoggerFactory.getLogger(SimpleRestClient.class);
@@ -49,7 +46,6 @@ public class SimpleRestClient {
 
     }
 
-    @PostConstruct
     public static RestTemplate getClient() {
         return restTemplate;
     }

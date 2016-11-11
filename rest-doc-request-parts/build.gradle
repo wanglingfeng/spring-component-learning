@@ -63,10 +63,10 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-jooq')
     compile('org.projectlombok:lombok:1.16.6')
     compile('org.springframework.boot:spring-boot-starter-mail')
-    compile('org.springframework.boot:spring-boot-starter-redis')
+    /*compile('org.springframework.boot:spring-boot-starter-redis')*/
     compile('org.springframework.retry:spring-retry')
     compile('org.springframework.boot:spring-boot-starter-security')
-    compile('org.springframework.session:spring-session')
+    /*compile('org.springframework.session:spring-session')*/
     compile('org.springframework.boot:spring-boot-starter-validation')
     compile('org.springframework.boot:spring-boot-starter-websocket')
     runtime('org.postgresql:postgresql')

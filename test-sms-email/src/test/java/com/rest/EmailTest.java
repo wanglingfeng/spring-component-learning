@@ -1,6 +1,6 @@
 package com.rest;
 
-import org.junit.Test;
+/*import org.junit.Test;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -10,12 +10,12 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.File;
-import java.util.Properties;
+import java.util.Properties;*/
 
 /**
  * Created by Lingfeng on 2016/3/23.
  */
-public class EmailTest {
+/*public class EmailTest {
 
     @Test
     public void textSend() {
@@ -132,4 +132,4 @@ public class EmailTest {
 
         return sender;
     }
-}
+}*/

@@ -1,6 +1,6 @@
 package com.sms;
 
-import com.sms.test.SMSApplication;
+/*import com.sms.test.SMSApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +8,12 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestTemplate;*/
 
 /**
  * Created by Lingfeng on 2016/4/5.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
+/*@RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(SMSApplication.class)
 public class SMSTest {
 
@@ -45,4 +45,4 @@ public class SMSTest {
         String result = restTemplate.postForObject(URI_SEND_VOICE, params, String.class);
         System.out.println(result);
     }
-}
+}*/

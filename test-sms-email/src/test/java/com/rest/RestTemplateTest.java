@@ -1,7 +1,7 @@
 package com.rest;
 
-import com.rest.test.SimpleRestClient;
-import com.rest.test.controller.domain.TestInfo;
+/*import com.sms.test.config.SimpleRestClient;
+import com.sms.test.controller.domain.TestInfo;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -22,12 +22,12 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.nio.charset.Charset;
-import java.util.*;
+import java.util.*;*/
 
 /**
  * Created by Lingfeng on 2016/3/22.
  */
-public class RestTemplateTest {
+/*public class RestTemplateTest {
 
     @Test
     public void getTest() {
@@ -88,7 +88,7 @@ public class RestTemplateTest {
 
         TestInfo info = new TestInfo("asd", "123");
 
-        /*TestInfo result = restTemplate.postForObject(uri, info, TestInfo.class);*/
+        *//*TestInfo result = restTemplate.postForObject(uri, info, TestInfo.class);*//*
         HttpEntity<TestInfo> requestEntity = new HttpEntity<>(info);
         ResponseEntity<TestInfo> response = restTemplate.exchange(uri, HttpMethod.POST, requestEntity, TestInfo.class);
         TestInfo result = response.getBody();
@@ -122,13 +122,13 @@ public class RestTemplateTest {
 
         System.out.println(result);
 
-        /*ObjectMapper mapper = new ObjectMapper();
+        *//*ObjectMapper mapper = new ObjectMapper();
         try {
             JsonNode node = mapper.readTree(result);
             System.out.println(node.get("username"));
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }*//*
     }
 
     @Test
@@ -175,4 +175,4 @@ public class RestTemplateTest {
         }
         return responseText;
     }
-}
+}*/
