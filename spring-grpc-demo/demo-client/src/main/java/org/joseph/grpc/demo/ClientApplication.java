@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * client端，整合spring去使用grpc
  *
@@ -27,6 +29,9 @@ public class ClientApplication {
     @Bean
     public ManagedChannel managedChannel() {
         return ManagedChannelBuilder.forAddress("localhost", grpcPort)
-                .usePlaintext(true).build();
+                .usePlaintext(true)
+                // 空闲模式保持一分钟，然后断开所有连接
+                .idleTimeout(1, TimeUnit.MINUTES)
+                .build();
     }
 }
